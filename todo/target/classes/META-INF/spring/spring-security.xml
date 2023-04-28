@@ -8,6 +8,11 @@
     ">
 
     <sec:http pattern="/resources/**" security="none"/>
+    
+    <!-- (1) -->
+    <!-- SpringSecurityの機能を無効化するための記述 -->
+    <sec:http pattern="/api/v1/**" security="none"/>
+    
     <sec:http>
         <sec:form-login/>
         <sec:logout/>
